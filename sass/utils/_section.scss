@@ -1,0 +1,31 @@
+.section__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: var(--title-text-color);
+  font-weight: var(--second-font-weight);
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.section__no-pading-top {
+  padding-top: 0px;
+}
+.section__team-background {
+  background-color: #f5f4fa;
+}
