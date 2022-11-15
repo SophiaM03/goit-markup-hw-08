@@ -125,15 +125,27 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./images/img.jpg" alt="друкує код" width="370" height="294" />
+              <img
+                srcset="./images/img1@1x.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1@1x.jpg"
+                alt="друкує код"
+              />
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/img1.jpg" alt="робота за комп'ютером" width="370" height="294" />
+              <img
+                srcset="./images/img2@1x.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2@1x.jpg"
+                alt="робота за комп'ютером"
+              />
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/img2.jpg" alt="розробка дизайну" width="370" height="294" />
+              <img
+                srcset="./images/img3@1x.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3@1x.jpg"
+                alt="розробка дизайну"
+              />
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -148,18 +160,20 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/igor-mobile@1x.jpg 1x, ./images/igor-mobile@1x.jpg 2x"
-                  media="max-width:767px"
-                />
-                <source
-                  srcset="./images/igor-tablet@1x.jpg 1x, ./images/igor-tablet@1x.jpg 2x"
-                  media="min-width:768px, max-width:1199px"
-                />
-                <img
                   srcset="./images/igor-desktop@1x.jpg 1x, ./images/igor-desktop@2x.jpg 2x"
-                  alt="чоловік"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw 100vw"
+                  media="(min-width: 1200px)"
                 />
+
+                <source
+                  srcset="./images/igor-tablet@1x.jpg 1x, ./images/igor-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/igor-mobile@1x.jpg 1x, ./images/igor-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="image" src="./images/igor-mobile@1x.jpg" alt="дизайнер продукту" />
               </picture>
 
               <div class="team__information">
@@ -200,18 +214,20 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/olga-mobile@1x.jpg 1x, ./images/olga-mobile@1x.jpg 2x"
-                  media="max-width:767px"
-                />
-                <source
-                  srcset="./images/olga-tablet@1x.jpg 1x, ./images/olga-tablet@1x.jpg 2x"
-                  media="min-width:768px, max-width:1199px"
-                />
-                <img
                   srcset="./images/olga-desktop@1x.jpg 1x, ./images/olga-desktop@2x.jpg 2x"
-                  alt="жінка"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw 100vw"
+                  media="(min-width: 1200px)"
                 />
+
+                <source
+                  srcset="./images/olga-tablet@1x.jpg 1x, ./images/olga-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/olga-mobile@1x.jpg 1x, ./images/olga-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="image" src="./images/olga-mobile@1x.jpg" alt="Розробник інтерфейсу" />
               </picture>
               <div class="team__information">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -251,18 +267,20 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/mykola-mobile@1x.jpg 1x, ./images/mykola-mobile@1x.jpg 2x"
-                  media="max-width:767px"
-                />
-                <source
-                  srcset="./images/mykola-tablet@1x.jpg 1x, ./images/mykola-tablet@1x.jpg 2x"
-                  media="min-width:768px, max-width:1199px"
-                />
-                <img
                   srcset="./images/mykola-desktop@1x.jpg 1x, ./images/mykola-desktop@2x.jpg 2x"
-                  alt="чоловік"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw 100vw"
+                  media="(min-width: 1200px)"
                 />
+
+                <source
+                  srcset="./images/mykola-tablet@1x.jpg 1x, ./images/mykola-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mykola-mobile@1x.jpg 1x, ./images/mykola-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="image" src="./images/mykola-mobile@1x.jpg" alt="маркетолог" />
               </picture>
               <div class="team__information">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -302,17 +320,23 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/mykhailo-mobile@1x.jpg 1x, ./images/mykhailo-mobile@1x.jpg 2x"
-                  media="max-width:767px"
+                  srcset="./images/mykhailor-desktop@1x.jpg 1x, ./images/mykhailo-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
+
                 <source
-                  srcset="./images/mykhailo-tablet@1x.jpg 1x, ./images/mykhailo-tablet@1x.jpg 2x"
-                  media="min-width:768px, max-width:1199px"
+                  srcset="./images/mykhailo-tablet@1x.jpg 1x, ./images/mykhailo-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mykhailo-mobile@1x.jpg 1x, ./images/mykhailo-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
                 <img
-                  srcset="./images/mykhailo-desktop@1x.jpg 1x, ./images/mykhailo-desktop@2x.jpg 2x"
-                  alt="чоловік"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw 100vw"
+                  class="image"
+                  src="./images/mykhailo-mobile@1x.jpg"
+                  alt="Дизайнер інтерфейсу"
                 />
               </picture>
               <div class="team__information">
@@ -478,12 +502,14 @@
               id="email"
               placeholder="E-mail"
             />
-            <button class="footer-form__button" type="submit">
-              Підписатися
-              <svg class="footer-form__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <div class="footer-form__button-box">
+              <button class="footer-form__button" type="submit">
+                Підписатися
+                <svg class="footer-form__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -548,7 +574,6 @@
     </div>
     <!-- Mobile menu -->
     <div class="mobile-menu js-menu-container">
-      <!-- <div class="container mobile-menu__container"> -->
       <button class="mobile-menu__close-button js-close-menu">
         <svg width="18.67" height="18.67">
           <use class="mobile-menu__close-svg" href="./images/icons.svg#icon-close"></use>
