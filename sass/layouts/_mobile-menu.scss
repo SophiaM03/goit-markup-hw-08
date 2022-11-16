@@ -1,4 +1,7 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,9 +41,6 @@
   }
 }
 
-.mobile-menu__list {
-  margin-bottom: 302px;
-}
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
